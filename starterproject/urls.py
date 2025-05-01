@@ -24,16 +24,16 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, Spec
 from des import urls as des_urls
 urlpatterns = [
     
-    path('api/v1/', include('users.urls')),
-    path('api/v1/', include('cms.urls')),
+    path('api/v1/users/', include('users.urls')),
+    path('api/v1/cms/', include('cms.urls')),
     
-    path('api/v1/', include('filehandler.urls')),
+    path('api/v1/files/', include('filehandler.urls')),
     path('api/v1/', include('globalapp.urls')),
-    path('api/v1/', include('meals.urls')),
-    path('api/v1/', include('notifications.urls')),
-    path('api/v1/', include('payments.urls')),
-    path('api/v1/', include('workouts.urls')),
-    path('api/v1/', include('healthdata.urls')),
+    path('api/v1/meals/', include('meals.urls')),
+    path('api/v1/notifications/', include('notifications.urls')),
+    path('api/v1/payments/', include('payments.urls')),
+    path('api/v1/workouts/', include('workouts.urls')),
+    path('api/v1/healthdata/', include('healthdata.urls')),
     path('admin/', admin.site.urls),
     path('schema/', SpectacularAPIView.as_view(), name='schema'),
     path(r'^django-des/', include(des_urls)),
