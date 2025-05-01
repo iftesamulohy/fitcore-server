@@ -24,6 +24,8 @@ FitCore is a cross-platform AI-powered fitness application that empowers users t
 - 🔔 Notifications for progress, updates, and new content
 
 ---
+## Core System Micro Service Base rchitecture
+![Micro Service](./microservice.png)
 
 ## 🗃️ Database Schema
 
@@ -66,3 +68,6 @@ python manage.py migrate
 
 # Start the server
 python manage.py runserver
+
+
+> 🛠 **Note:** The project uses a custom `BaseViews` system and a dynamic API function implemented in the `globalapp` module. Thanks to this architecture, building a general-purpose API takes only **10–15 minutes** under normal conditions. However, endpoints involving complex AI logic (like GPT integration or model inference) may take additional time depending on the implementation complexity.
