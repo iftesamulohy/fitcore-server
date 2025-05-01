@@ -33,7 +33,6 @@ openpyxl==3.1.2
 packaging==24.1
 pdfkit==1.0.0
 phonenumbers==8.13.44
-pillow==10.3.0
 PyJWT==2.8.0
 python-dateutil==2.9.0.post0
 python-decouple==3.8
