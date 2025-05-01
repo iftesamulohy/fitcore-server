@@ -24,7 +24,7 @@ FitCore is a cross-platform AI-powered fitness application that empowers users t
 - 🔔 Notifications for progress, updates, and new content
 
 ---
-## Core System Micro Service Base rchitecture
+## Core System Micro Service Base Architecture
 ![Micro Service](./microservice.png)
 
 ## 🗃️ Database Schema
