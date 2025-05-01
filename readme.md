@@ -1,57 +1,62 @@
 # FitCore – AI-Powered Fitness App 🏋️🤖🥗
 
-FitCore is a cross-platform AI-powered fitness app that helps users achieve their fitness goals through personalized workout videos and intelligent meal planning. It supports data integration from health tracking devices like Google Fit and Apple HealthKit.
+FitCore is a cross-platform AI-powered fitness application that empowers users to meet their fitness goals through premium workout videos and personalized AI-generated meal plans. It syncs health data from smart devices like Google Fit and Apple HealthKit or uses manual inputs as a fallback.
+
+---
 
 ## 🔗 Live Links
 
-- **🌐 Live App:** [https://your-live-app-link.com](https://your-live-app-link.com)
-- **🛠️ Admin Panel:** [https://your-admin-link.com](https://your-admin-link.com)
-- **📘 API Documentation:** [https://your-api-docs-link.com](https://your-api-docs-link.com)
+- **🌐 Live App:** [https://fitcore-d38307ecce19.herokuapp.com](https://fitcore-d38307ecce19.herokuapp.com)
+- **🛠️ Admin Panel:** [https://fitcore-d38307ecce19.herokuapp.com/admin/](https://fitcore-d38307ecce19.herokuapp.com/admin/)  
+  ➤ *Login:* `admin@gmail.com` / `admin`
+- **📘 API Documentation (ReDoc):** [https://fitcore-d38307ecce19.herokuapp.com/redoc/](https://fitcore-d38307ecce19.herokuapp.com/redoc/)
+- **📒 Swagger UI:** [https://fitcore-d38307ecce19.herokuapp.com/swagger-ui/](https://fitcore-d38307ecce19.herokuapp.com/swagger-ui/)
 
 ---
 
 ## 🧠 Core Features
 
-- AI-generated **personalized meal plans** using health data
-- Stream/download **goal-based workout videos**
-- **Health sync** via Google Fit & Apple HealthKit
-- **Manual input fallback** for health tracking
-- **Subscriptions** and **one-time content purchases**
-- **Notifications** for updates, progress, and new content
+- 💡 AI-generated personalized meal plans
+- 🎥 Categorized workout video library
+- 🔄 Health data sync via Google Fit / Apple HealthKit
+- ✍️ Manual health data fallback
+- 🛒 Subscriptions and one-time content purchases
+- 🔔 Notifications for progress, updates, and new content
 
 ---
 
 ## 🗃️ Database Schema
 
-This project uses **PostgreSQL** with the schema visualized below:
+This project uses **PostgreSQL**, with the following database schema:
 
-![Database ERD](./7e7ce494-9a2b-414c-bf4c-a2b006b70821.png)
+![Database ERD](./dbdiagram.jpeg)
 
-📍 View the interactive DB diagram here:  
+🧭 View the interactive DB diagram here:  
 🔗 [https://dbdiagram.io/d/681376501ca52373f5198603](https://dbdiagram.io/d/681376501ca52373f5198603)
 
 ---
 
-## ⚙️ Backend Stack
+## ⚙️ Backend Tech Stack
 
 - **Framework:** Django + Django REST Framework
 - **Database:** PostgreSQL
 - **Authentication:** JWT & OAuth2
 - **Media Storage:** AWS S3 / Cloudinary
-- **AI Integration:** OpenAI GPT-based meal planning (or custom ML)
+- **AI Meal Planning:** OpenAI GPT or custom ML integration
+- **Deployment:** Heroku
 
 ---
 
-## 📦 Installation & Setup
+## 🚀 Setup Instructions
 
 ```bash
-# Clone the repo
-git clone https://github.com/your-username/fitcore.git
+# Clone the repository
+git clone https://github.com/iftesamulohy/fitcore-server.git
 cd fitcore
 
-# Create virtual environment
+# Create and activate virtual environment
 python -m venv env
-source env/bin/activate  # or env\Scripts\activate on Windows
+source env/bin/activate  # (use `env\Scripts\activate` on Windows)
 
 # Install dependencies
 pip install -r requirements.txt
@@ -59,5 +64,5 @@ pip install -r requirements.txt
 # Run migrations
 python manage.py migrate
 
-# Run server
+# Start the server
 python manage.py runserver
